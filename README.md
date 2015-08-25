@@ -127,7 +127,7 @@ state = {
     }
 }
 
-reducer = {
+reducers = {
     // Implementing country domain reducers using arrow function syntax.
     countries: {
         ADD_COUNTRY: (domain, action) => domain.push(action.country),
@@ -137,7 +137,7 @@ reducer = {
     cities: {
         ADD_CITY (domain, action) {
             return domain.push(action.city);
-        }
+        },
         REMOVE_CITY (domain, action) {
             return domain.delete(domain.indexOf(action.city));
         }
